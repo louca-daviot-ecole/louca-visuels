@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link rel="stylesheet" href="base-ig.css">
+<style>
+.block-sec { background: var(--surface-card); border: 1px solid var(--line); border-radius: 16px; padding: 30px 34px; margin-bottom: 26px; }
+.block-sec .lvl { font-size: 21px; font-weight: 700; letter-spacing: 3px; color: var(--brand-gold); margin-bottom: 8px; }
+.block-sec h2 { font-size: 34px; font-weight: 700; color: var(--text-strong); margin-bottom: 10px; line-height: 1.2; }
+.block-sec p { font-size: 27px; line-height: 1.45; color: var(--text-body); }
+.block-sec code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 25px; color: var(--brand-gold); }
+</style>
+</head><body>
+  <div class="kicker">Sécurité · avis hors bande Next.js · 14/10/2026</div>
+  <h1 style="font-size:52px;">3 patterns de code Next.js à auditer <span class="accent">cette semaine</span></h1>
+  <div class="subtitle" style="margin-top:20px;margin-bottom:30px;">Deux RCE critiques sans authentification + un DoS. « There is no known workaround for affected applications. »</div>
+  <div class="block-sec">
+    <div class="lvl">CRITICAL · GHSA-673q-mjm6-r5xr</div>
+    <h2><code>use cache</code> + typed arrays</h2>
+    <p>Upgrade immédiat recommandé par l'éditeur, même sans fonctions similaires dans son app.</p>
+  </div>
+  <div class="block-sec">
+    <div class="lvl">CRITICAL · CVE-2026-96889</div>
+    <h2>SVG via Image Optimization API</h2>
+    <p>Faille amont <code>sharp</code> (Linux glibc). Workaround annoncé : sharp ≥ 0.35.5.</p>
+  </div>
+  <div class="block-sec">
+    <div class="lvl">HIGH · GHSA-p3m5-59mp-jv5r</div>
+    <h2>Server Actions sur App Router</h2>
+    <p>DoS par requêtes fabriquées. Pages Router / sans Server Actions : non vulnérables.</p>
+  </div>
+  <div class="subtitle" style="margin-top:6px;font-size:28px;">Versions corrigées : <strong style="color:var(--brand-gold);">v16.4.1</strong> &amp; <strong style="color:var(--brand-gold);">v15.5.28</strong></div>
+  
+  <div class="footer">
+    <span class="sig">Louca Daviot — Dev Web &amp; IA</span>
+    <span>Source : nextjs.org · 2026-10-14</span>
+  </div>
+</body></html>

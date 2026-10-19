@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link rel="stylesheet" href="base.css">
+<style>
+html, body { width: 1200px; height: 630px; }
+.row { display: flex; gap: 18px; align-items: stretch; }
+.chip { background: var(--surface-card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; font-size: 19px; line-height: 1.4; color: var(--text-body); flex: 1; }
+.chip b { color: var(--brand-gold); display: block; font-size: 15px; letter-spacing: 2px; margin-bottom: 6px; }
+</style>
+</head><body>
+  <div class="kicker">Sécurité — rappel pour sites Next.js</div>
+  <h1>Votre site est en Next.js ? Vérifiez-le cette semaine.</h1>
+  <div class="subtitle">Avis de sécurité hors bande du 14/10/2026 : deux exécutions de code critiques sans authentification + une faille de saturation.</div>
+  <div class="row">
+    <div class="chip"><b>PATCHER</b>Passer en v16.4.1 ou v15.5.28 — l'éditeur recommande l'upgrade immédiat, « no known workaround ».</div>
+    <div class="chip"><b>DOCUMENTER</b>Versions déployées, date du correctif appliqué : c'est ce qui rassure quand on maintient des sites pour des tiers.</div>
+    <div class="chip"><b>RESPIRER</b>Pages Router ou sans Server Actions : la faille de saturation ne vous concerne pas. Pour les RCE, l'avis recommande l'upgrade immédiat « même sans fonctions similaires » dans votre app.</div>
+  </div>
+  <div class="footer">
+    <span class="sig">Louca Daviot — Dev Web &amp; IA</span>
+    <span>Source : nextjs.org · 2026-10-14</span>
+  </div>
+</body></html>

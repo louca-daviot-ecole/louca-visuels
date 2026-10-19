@@ -1,0 +1,43 @@
+/* Base partagée — covers LinkedIn 1200×627 & Facebook 1200×630
+   Identité = brand.css (charte personnelle Louca : navy/beige/gold/slate).
+   N'utiliser AUCUNE couleur codée en dur ici : uniquement var(). */
+@import "brand.css";
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1200px; height: 627px; overflow: hidden; }
+body {
+  background: var(--brand-navy);
+  color: var(--text-body);
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  display: flex; flex-direction: column;
+  padding: 44px 56px 0;
+}
+.kicker {
+  font-size: 21px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--brand-gold); margin-bottom: 14px;
+}
+h1 { font-size: 46px; font-weight: 700; line-height: 1.12; color: var(--text-strong); margin-bottom: 8px; }
+.subtitle { font-size: 23px; color: var(--text-muted); margin-bottom: 26px; }
+.blocks { display: flex; gap: 20px; flex: 0 0 auto; }
+.block {
+  flex: 1; background: var(--surface-card); border: 1px solid var(--line); border-radius: 14px;
+  padding: 22px 22px 20px; display: flex; flex-direction: column;
+}
+.block .num {
+  font-size: 15px; font-weight: 700; letter-spacing: 2px; color: var(--brand-gold); margin-bottom: 10px;
+}
+.block h2 { font-size: 24px; font-weight: 700; color: var(--text-strong); line-height: 1.2; margin-bottom: 10px; }
+.block p { font-size: 18.5px; line-height: 1.42; color: var(--text-body); }
+.block code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 17px; color: var(--brand-gold); }
+.badges { display: flex; gap: 16px; align-items: center; margin-top: 24px; }
+.badge {
+  background: var(--slate-soft); border: 1px solid var(--text-muted); color: var(--text-muted);
+  border-radius: 999px; padding: 9px 20px; font-size: 20px; font-weight: 700;
+}
+.badge.alert { background: var(--gold-soft); border-color: var(--brand-gold); color: var(--brand-gold); }
+.footer {
+  margin-top: auto; border-top: 1px solid var(--line); padding: 16px 56px;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 17px; color: var(--text-faint);
+}
+.footer .sig { color: var(--text-muted); font-weight: 600; }

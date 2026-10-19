@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link rel="stylesheet" href="base.css">
+<style>
+html, body { width: 1200px; height: 627px; }
+</style>
+</head><body>
+  <div class="kicker">Sécurité — avis hors bande</div>
+  <h1>Next.js — avis de sécurité hors bande 14/10/2026</h1>
+  <div class="subtitle">3 patterns de code à passer en revue cette semaine</div>
+  <div class="blocks">
+    <div class="block">
+      <div class="num">CRITICAL</div>
+      <h2><code>use cache</code> + typed arrays</h2>
+      <p>RCE non authentifiée (GHSA-673q-mjm6-r5xr). Pas de contournement connu : upgrade immédiat recommandé.</p>
+    </div>
+    <div class="block">
+      <div class="num">CRITICAL</div>
+      <h2>SVG via Image Optimization API</h2>
+      <p>RCE non authentifiée (CVE-2026-96889 / GHSA-2464-fhr4-w9xw), faille amont <code>sharp</code>, Linux glibc. Workaround annoncé : sharp ≥ 0.35.5.</p>
+    </div>
+    <div class="block">
+      <div class="num">HIGH</div>
+      <h2>Server Actions sur App Router</h2>
+      <p>Denial of Service (GHSA-p3m5-59mp-jv5r) : requêtes fabriquées saturant le CPU. Pages Router / sans Server Actions : non vulnérables.</p>
+    </div>
+  </div>
+  <div class="badges">
+    <span class="badge alert">2 Critical + 1 High</span>
+    <span class="badge">Versions corrigées : v16.4.1 &amp; v15.5.28</span>
+  </div>
+  <div class="footer">
+    <span class="sig">Louca Daviot — Dev Web &amp; IA</span>
+    <span>Source : nextjs.org · 2026-10-14</span>
+  </div>
+</body></html>

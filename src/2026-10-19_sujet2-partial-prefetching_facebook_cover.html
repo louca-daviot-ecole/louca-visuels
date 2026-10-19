@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link rel="stylesheet" href="base.css">
+<style>
+  /* Facebook 1200×630 — même identité, hauteur +3px */
+  html, body { width: 1200px; height: 630px; }
+  .fb-wrap { display: flex; gap: 34px; align-items: stretch; margin-top: 26px; }
+  .stat-box {
+    border: 2px solid var(--brand-gold); border-radius: 14px; padding: 20px 26px;
+    background: rgba(249,115,22,.07); min-width: 250px;
+  }
+  .stat-box .big { font-size: 46px; font-weight: 700; color: var(--brand-gold); line-height: 1.1; }
+  .stat-box .label { font-size: 18px; color: var(--text-body); margin-top: 8px; line-height: 1.35; }
+</style>
+</head><body>
+  <div class="kicker">Next.js 16.4 · Partial Prefetching</div>
+  <h1>L'honnêteté sur les chiffres : une leçon d'optimisation web</h1>
+  <div class="subtitle">v0 confie à un agent IA l'amélioration de sa propre navigation — et publie ses mesures avec leurs réserves.</div>
+  <div class="fb-wrap">
+    <div class="stat-box">
+      <div class="big">−14,4 %</div>
+      <div class="label">coûts de serving — annoncés par l'auteur</div>
+    </div>
+    <div class="stat-box">
+      <div class="big">×2</div>
+      <div class="label">tests instant() — annoncés par l'auteur</div>
+    </div>
+    <div style="flex:1; display:flex; align-items:center;">
+      <div style="font-size:21px; line-height:1.45; color:var(--text-body);">
+        L'auteur le précise lui-même : trafic et déploiements non liés ont varié. Ces chiffres montrent
+        <strong style="color:var(--text-strong);">l'absence de surcoût</strong>, pas un gain prouvé du prefetch.
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="sig">Louca Daviot — Dev Web &amp; IA</span>
+    <span>Source : nextjs.org · 2026-10-16</span>
+  </div>
+</body></html>

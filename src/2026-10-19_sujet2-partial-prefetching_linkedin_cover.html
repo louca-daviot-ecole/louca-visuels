@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link rel="stylesheet" href="base.css">
+<style>
+html, body { width: 1200px; height: 627px; }
+.kicker { color: var(--brand-gold); }
+.chips { display: flex; gap: 16px; margin-top: 26px; }
+.chip {
+  background: var(--surface-card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 14px 22px; font-size: 21px; color: var(--text-body);
+}
+.skill {
+  margin-top: 30px; background: var(--gold-soft); border: 1px solid var(--brand-gold);
+  border-radius: 12px; padding: 18px 24px; font-size: 22px; color: var(--text-body);
+}
+.skill code { font-family: ui-monospace, "SF Mono", Menlo, monospace; color: var(--brand-gold); font-weight: 700; }
+</style>
+</head><body>
+  <div class="kicker">Performance — Next.js 16.4</div>
+  <h1>v0 a optimisé sa navigation avec un agent IA et le Partial Prefetching</h1>
+  <div class="subtitle">Ce que l'on peut en retenir : la politique écrite avant l'automatisation.</div>
+  <div class="chips">
+    <span class="chip">Prefetch déclenché « on hover, focus, or touch »</span>
+    <span class="chip">Précharger le détail projet · cached « Recent Chats » · pas de prefetch de la liste</span>
+  </div>
+  <div class="skill">Skill public : <code>next-partial-prefetching-optimizer</code> (installable via npx — prérequis : Cache Components + Partial Prefetching)</div>
+  <div class="footer">
+    <span class="sig">Louca Daviot — Dev Web &amp; IA</span>
+    <span>Source : nextjs.org · 2026-10-16</span>
+  </div>
+</body></html>

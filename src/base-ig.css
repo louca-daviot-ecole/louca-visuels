@@ -1,0 +1,51 @@
+/* Base Instagram carrousel 1080×1350 — même identité que base.css
+   Couleurs : uniquement var() issues de brand.css (charte personnelle Louca). */
+@import "brand.css";
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; }
+body {
+  background: var(--brand-navy); color: var(--text-body);
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  display: flex; flex-direction: column;
+  padding: 80px 72px 0;
+}
+.kicker {
+  font-size: 26px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase;
+  color: var(--brand-gold); margin-bottom: 28px;
+}
+h1 { font-size: 58px; font-weight: 700; line-height: 1.15; color: var(--text-strong); }
+.accent { color: var(--brand-gold); }
+.subtitle { font-size: 30px; color: var(--text-muted); margin-top: 26px; line-height: 1.4; }
+.body-text { font-size: 33px; line-height: 1.5; color: var(--text-body); }
+.body-text strong { color: var(--text-strong); }
+.body-text code, .mono {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 30px; color: var(--brand-gold);
+}
+.rule-list { list-style: none; }
+.rule-list li { font-size: 33px; line-height: 1.45; color: var(--text-body); padding-left: 34px; position: relative; margin-bottom: 26px; }
+.rule-list li::before { content: "—"; position: absolute; left: 0; color: var(--text-muted); }
+.rule-list li.dont::before { color: var(--brand-gold); }
+.numbered { list-style: none; counter-reset: n; }
+.numbered li {
+  counter-increment: n; font-size: 32px; line-height: 1.45; color: var(--text-body);
+  margin-bottom: 34px; padding-left: 66px; position: relative;
+}
+.numbered li::before {
+  content: counter(n); position: absolute; left: 0; top: 2px;
+  width: 46px; height: 46px; border-radius: 50%; background: var(--slate-soft);
+  border: 2px solid var(--brand-slate); color: var(--text-body); font-weight: 700; font-size: 25px;
+  display: flex; align-items: center; justify-content: center;
+}
+.pagenum { font-size: 22px; color: var(--text-faint); font-weight: 700; }
+.footer {
+  margin-top: auto; border-top: 1px solid var(--line); padding: 28px 72px;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 22px; color: var(--text-faint);
+}
+.footer .sig { color: var(--text-muted); font-weight: 600; }
+
+/* FIX 19/10 — recentrage vertical du contenu + numéro de page collé au contenu
+   (sinon le .pagenum inline margin-top:auto flottait au milieu de la slide) */
+.kicker { margin-top: auto; }
+.pagenum { margin-top: 24px !important; }

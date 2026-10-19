@@ -1,0 +1,26 @@
+/* ============================================================
+   BRAND CSS — identité visuelle personnelle de Louca Daviot
+   Point de référence UNIQUE de tout le système éditorial visuel.
+   Charte : skill content-editorial, section « Charte graphique ».
+   Les 4 couleurs de référence ne doivent pas être modifiées.
+   Les tokens dérivés sont des neutres ajoutés uniquement pour la
+   lisibilité/contraste (règle n°6 du branding).
+   ============================================================ */
+:root {
+  /* Couleurs de référence (branding personnel — ne pas modifier) */
+  --brand-navy:  #0A1F33;  /* dominante : fonds, couvertures, contrastes */
+  --brand-beige: #DDD7C8;  /* fonds clairs, cartes, texte sur sombre */
+  --brand-gold:  #D4A574;  /* accents MESURÉS : mots importants, chiffres, alertes */
+  --brand-slate: #4A6278;  /* secondaire : cartes secondaires, séparateurs, sous-titres */
+
+  /* Dérivés neutres — lisibilité uniquement */
+  --text-strong: #FFFFFF;
+  --text-body:   var(--brand-beige);
+  --text-muted:  #93A9BD;  /* slate éclairci : sous-titres lisibles sur navy */
+  --text-faint:  #6E8399;
+  --surface-card:     rgba(221, 215, 200, .055);  /* carte beige translucide */
+  --surface-card-alt: rgba(74, 98, 120, .28);     /* carte slate */
+  --line:       rgba(74, 98, 120, .55);
+  --gold-soft:  rgba(212, 165, 116, .13);
+  --slate-soft: rgba(74, 98, 120, .22);
+}
